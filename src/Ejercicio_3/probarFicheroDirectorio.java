@@ -46,11 +46,11 @@ public class probarFicheroDirectorio {
         System.out.print("Introduce el nombre del fichero: ");
         String nombreFichero = scanner.nextLine();
 
-        Directorio directorio = new Directorio();
-        directorio.crearDirectorio(nombreDirectorio);
+        Directorio dirObjeto = new Directorio();
+        dirObjeto.crearDirectorio(nombreDirectorio);
 
-        Fichero fichero = new Fichero();
-        fichero.crearFichero(nombreDirectorio + File.separator + nombreFichero);
+        Fichero ficheroObjeto = new Fichero();
+        ficheroObjeto.crearFichero(nombreDirectorio + File.separator + nombreFichero);
 
         scanner.close();
 
