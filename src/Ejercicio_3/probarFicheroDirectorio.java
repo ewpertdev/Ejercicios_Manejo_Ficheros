@@ -6,10 +6,11 @@ class Fichero {
     void crearFichero(String nombreFichero) {
         File miFichero = new File(nombreFichero);
         try {
-            if (!miFichero.createNewFile()) {
-                System.out.println("El fichero ya existe.");
-            } else {
+            if (miFichero.createNewFile()) {
                 System.out.println("Has creado el fichero: " + nombreFichero);
+            } else {
+                System.out.println("El fichero ya existe.");
+
             }
         } catch (Exception e) {
             e.printStackTrace();
