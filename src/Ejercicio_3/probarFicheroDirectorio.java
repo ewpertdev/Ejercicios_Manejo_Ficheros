@@ -23,10 +23,10 @@ class Directorio{
     void crearDirectorio(String nombreDirectorio) {
         File miDirectorio = new File(nombreDirectorio);
         try {
-            if (!miDirectorio.mkdirs()) {
-                System.out.println("El directorio ya existe.");
-            } else {
+            if (miDirectorio.mkdirs()) {
                 System.out.println("Has creado el directorio: " + nombreDirectorio);
+            } else {
+                System.out.println("El directorio ya existe.");
             }
         } catch (Exception e) {
             e.printStackTrace();
