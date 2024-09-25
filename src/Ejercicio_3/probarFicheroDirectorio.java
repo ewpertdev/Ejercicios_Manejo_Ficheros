@@ -4,9 +4,9 @@ import java.io.File;
 import java.util.Scanner;
 class Fichero {
     void crearFichero(String nombreFichero) {
-        File file = new File(nombreFichero);
+        File miFichero = new File(nombreFichero);
         try {
-            if (!file.createNewFile()) {
+            if (!miFichero.createNewFile()) {
                 System.out.println("El fichero ya existe.");
             } else {
                 System.out.println("Has creado el fichero: " + nombreFichero);
@@ -20,9 +20,9 @@ class Fichero {
 
 class Directorio{
     void crearDirectorio(String nombreDirectorio) {
-        File file = new File(nombreDirectorio);
+        File miDirectorio = new File(nombreDirectorio);
         try {
-            if (!file.mkdirs()) {
+            if (!miDirectorio.mkdirs()) {
                 System.out.println("El directorio ya existe.");
             } else {
                 System.out.println("Has creado el directorio: " + nombreDirectorio);
