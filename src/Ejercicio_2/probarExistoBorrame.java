@@ -20,7 +20,7 @@ class Existo_Borrame {
 public class probarExistoBorrame {
     public static void main(String[] args) {
         Existo_Borrame.borrarArchivo("borradme.txt");
-        // Para probar el programa, crear un archivo con el nombre "borradme.txt"
+        // Para probar el programa hay que crear un archivo con el nombre "borradme.txt"
         // dentro de la misma carpeta de este proyecto
 
     }
